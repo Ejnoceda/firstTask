@@ -10,6 +10,8 @@ public class StatisticsGiver {
 
         if (a == "min"){
             return arr[0];
+        } else if (a== "max"){
+            return arr[arr.length-1];
         }
         return 0;
     }
