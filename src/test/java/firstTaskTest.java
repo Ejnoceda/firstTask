@@ -14,4 +14,8 @@ public class firstTaskTest {
     public void maxValue(){
         assertEquals(92 , StatisticsGiver.calculateStats("max"));
     }
+    @Test
+    public void numberOfElementsInSequences(){
+        assertEquals(6 , StatisticsGiver.calculateStats("array Length"));
+    }
 }
