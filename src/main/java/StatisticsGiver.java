@@ -13,6 +13,8 @@ public class StatisticsGiver {
                 return arr[0];
             case "max":
                 return arr[arr.length-1];
+            case "array Length":
+                return arr.length;
         }
         return 0;
     }
