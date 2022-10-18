@@ -1,16 +1,17 @@
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class StatisticsGiver {
 
-    public static int calculateStats(int[] arr){
-        int min =0;
+    public static int calculateStats(String a){
 
-        arr = new int[]{6, 9, 15, -2, 92, 11};
+        int[] arr = new int[]{6, 9, 15, -2, 92, 11};
         Arrays.sort(arr);
         Arrays.toString(arr);
 
-        return min = arr[0];
+        if (a == "min"){
+            return arr[0];
+        }
+        return 0;
     }
 
 }
