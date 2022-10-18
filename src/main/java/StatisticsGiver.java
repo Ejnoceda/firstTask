@@ -2,13 +2,14 @@ import java.util.Arrays;
 
 public class StatisticsGiver {
 
-    public static int calculateStats(String a){
-        int sum =0;
-        int[] arr = new int[]{6, 9, 15, -2, 92, 11};
+    public static long calculateStats(String a) {
+        long sum = 0;
+        long[] arr = new long[]{6, 9, 15, -2, 92, 11};
         Arrays.sort(arr);
-        Arrays.toString(arr);
-
-
+        for (int i = 0; i < arr.length; i++) {
+            sum += arr[i];
+        }
+        long average =  sum/arr.length;
         switch (a){
             case "min":
                 return arr[0];
@@ -16,6 +17,8 @@ public class StatisticsGiver {
                 return arr[arr.length-1];
             case "array Length":
                 return arr.length;
+            case "Average":
+                return average;
         }
         return 0;
     }

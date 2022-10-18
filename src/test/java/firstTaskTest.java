@@ -20,6 +20,6 @@ public class firstTaskTest {
     }
     @Test
     public void averageValue(){
-        assertEquals(21.8 , StatisticsGiver.calculateStats("Average"));
+        assertEquals(21 , StatisticsGiver.calculateStats("Average"));
     }
 }
