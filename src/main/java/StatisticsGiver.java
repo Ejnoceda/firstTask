@@ -8,10 +8,11 @@ public class StatisticsGiver {
         Arrays.sort(arr);
         Arrays.toString(arr);
 
-        if (a == "min"){
-            return arr[0];
-        } else if (a== "max"){
-            return arr[arr.length-1];
+        switch (a){
+            case "min":
+                return arr[0];
+            case "max":
+                return arr[arr.length-1];
         }
         return 0;
     }
