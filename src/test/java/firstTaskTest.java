@@ -18,4 +18,8 @@ public class firstTaskTest {
     public void numberOfElementsInSequences(){
         assertEquals(6 , StatisticsGiver.calculateStats("array Length"));
     }
+    @Test
+    public void averageValue(){
+        assertEquals(21.8 , StatisticsGiver.calculateStats("Average"));
+    }
 }
